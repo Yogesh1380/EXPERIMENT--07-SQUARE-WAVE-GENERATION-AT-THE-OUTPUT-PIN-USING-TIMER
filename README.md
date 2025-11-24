@@ -231,41 +231,39 @@ FOR PULSE AT 75%
 
 
 ## DUTY CYCLE AND FREQUENCY CALCULATION 
-FOR PULSE AT 50%
 
-Amp = 5 * 1V = 5V
+# Amp = 5 * 1V = 5V
 
-TON = 2.5 * 0.5 = 1.25ms
+FOR PULSE AT 50% :
 
-TOFF = 2.5 * 0.5 = 1.25ms
+TON = 1.5 * 0.5 = 0.75ms
+
+TOFF = 3.5 * 0.5 = 1.75ms
 
 TOTAL TIME = 5 * 0.5 = 2.5ms
 
-FREQUENCY = 1/(TOTAL TIME) = 0.4KHz
+FREQUENCY = 1/(TOTAL TIME) = 1/2.5 = 0.4Hz
 
-FOR PULSE AT 30%
+FOR PULSE AT 30% :
 
-Amp = 5 * 1V = 5V
 
-TON = 1.25 * 0.5 = 0.625ms
+TON = 1.5 * 0.3 = 0.45ms
 
-TOFF= 3.75 * 0.5 = 1.875ms
+TOFF = 3.5 * 0.3 = 1.05ms
 
-TOTAL TIME = 2.5ms
+TOTAL TIME = 5 * 0.3 = 1.5ms
 
-FREQUENCY = 1/(TOTAL TIME) = 0.4KHz
+FREQUENCY = 1/(TOTAL TIME) =  0.667Hz
 
-FOR PULSE AT 75%
+FOR PULSE AT 75% :
 
-Amp = 5 * 1V = 5V
+TON = 1.5 * 0.75 = 1.125ms
 
-TON = 3.75 * 0.5 = 1.875ms
+TOFF= 3.5 * 0.75 = 2.625ms
 
-TOFF= 1.25 * 0.5 = 0.625ms
+TOTAL TIME = 5 * 0.75 = 3.75ms
 
-TOTAL TIME = 2.5ms
-
-FREQUENCY = 1/(TOTAL TIME) = 0.4KHz
+FREQUENCY = 1/(TOTAL TIME) = 1/3.75 = 0.26Hz
 ## Result :
 A PWM Signal is generated using the following frequency and various duty cycles are simulated 
 
